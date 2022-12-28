@@ -1,0 +1,26 @@
+header {
+    padding: 1.5rem;
+    box-shadow: 0px 3px 15px 0px #0000001f;
+    position: relative;
+    z-index: 1;
+}
+
+.header-with-arrow {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.fa-arrow-left {
+    font-size: 1.7rem;
+    color: #353535;
+}
+
+.fa-arrow-left:hover {
+    transform: translateX(-3px);
+}

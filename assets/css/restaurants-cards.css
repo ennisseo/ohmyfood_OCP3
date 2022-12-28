@@ -1,0 +1,94 @@
+.restaurants-section-background {
+    background-color: #f7f7f7;
+}
+
+.restaurants-container {
+    padding: 1.5rem;
+    padding-bottom: 3rem;
+}
+
+.restaurants-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.restaurants-card {
+    border-radius: 20px;
+    box-shadow: 0px 3px 15px 0px #0000001A;
+    transition: .2s;
+    background-color: white;
+    width: 100%;
+    position: relative;
+}
+
+.restaurants-card:hover {
+    transform: scale(1.005);
+}
+
+.restaurant-label {
+    padding: .3rem 1rem;
+    background-color: var(--clr-tertiary);
+    border-radius: 3px;
+    color: #008766;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    box-shadow: 0px 4px 15px 0px #00000044;
+}
+
+.restaurants-card img {
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+    height: 15rem;
+}
+
+
+.restaurants-card-caption {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+h3 {
+    margin-bottom: 0;
+}
+
+.restaurants-card-caption p {
+    margin-top: 0;
+}
+
+.fa-heart {
+    font-size: 2rem;
+    color: white;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    background-image: linear-gradient(180deg, white 50%, var(--clr-primary) 0%, var(--clr-secondary) 80%);
+    background-size: 100% 200%;
+    background-position: top;
+    -webkit-background-clip: text;
+    transition: background-position 1s ease-out;
+}
+
+.fa-heart:hover {
+    background-position: bottom;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-color: transparent;
+}
+
+@media screen and (min-width: 800px) {
+    .restaurants-container {
+        max-width: 1400px;
+        margin: auto;
+    }
+
+    .restaurants-cards-container {
+        display: flex;
+    }
+
+    .restaurants-card {
+        width: calc((100% / 2) - (1.5rem/2));
+    }
+}
