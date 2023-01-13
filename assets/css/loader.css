@@ -11,7 +11,6 @@
     animation: loaderOut 2.5s ease-in-out;
     animation-fill-mode: both;
     background: white;
-
 }
 
 @keyframes loaderOut {
